@@ -1,0 +1,10 @@
+version: '2'
+services:
+  golang:
+    build:
+      context: .
+    working_dir: /app
+    volumes:
+      - .:/app:delegated
+    entrypoint:
+      - /bin/bash
